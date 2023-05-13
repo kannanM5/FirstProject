@@ -1,0 +1,77 @@
+.BackBtn{
+
+    background-color: #fa424a;
+    border-color: #fa424a;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 7px 14px;
+    font-size: 14px;
+}
+.submitBtn{
+    background-color: #00a8ff;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 20px;
+    border: none;
+   margin-bottom: 25px;
+   margin-top: 15px;
+}
+.btnSubmit{
+    text-align: center;
+}
+.inputFieldPrice3{
+    width: 300px;
+    margin-right: 15px;
+}
+.eye{
+    width: 12px;
+    margin-left: 12px;
+}
+.signUpBox{
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(254,242,240,1) 0%, rgba(241,214,217,1) 100%);
+     width: 350px;
+     height: 82%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 5px;
+     
+}
+.mainlogo{
+    width: 260px;
+    margin-top: 10px;
+}
+.MainBody{
+    background: #eceff4 !important;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.inputFieldsign{
+    width: 310px;
+    margin-bottom: 10px;
+}
+.signBtn{
+    border: none;
+    color: white;
+    background-color: #46c35f;
+    border-radius: 20px;
+    padding: 7px 30px;
+}
+.titleMain{
+    margin: 10px 0 20px 0;
+    font-weight: 300 !important;
+    font-size: 19px
+
+}
+.eyeMain{
+    width: 17px;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 7px;
+}
+

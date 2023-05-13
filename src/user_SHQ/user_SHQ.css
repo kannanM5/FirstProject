@@ -1,0 +1,16 @@
+.left1{
+ 
+    font-size: 11px;
+    color: white;
+    flex: 1;
+    height: 20px;
+    
+}
+.right1{
+    flex: 1;
+    font-size: 11px;
+    color: white;
+    background-color: rgb(238, 31, 31);
+    height: 20px;
+  
+}

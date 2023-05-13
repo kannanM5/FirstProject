@@ -1,0 +1,102 @@
+.setTop{
+    display: flex;
+    justify-content: space-between;
+}
+.setting_search_boxes{
+    display: flex;
+
+}
+.createBtnSet{
+    background-color: #46c35f;
+    border-color: #46c35f;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 7px 15px;
+}
+.searchBtnSet,.resetBtnSet{
+    background-color: #00a8ff;
+    border-color: #00a8ff;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.searchBtnSet{
+    padding: 5px 30px;
+    margin-right: 10px;
+}
+.resetBtnSet{
+    padding: 5px 15px;
+}
+.inputFieldAcc{
+    margin: 0 18px 15px 0;
+    width: 24%;
+}
+.inputFieldFob{
+    margin: 0 18px 15px 0;
+    width: 32%;
+
+}
+.inputFieldPrice{
+    width: 100%;
+    margin: 0 18px 15px 0;
+}
+.labelSet{
+    font-weight: 300;
+    font-size: 15px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.pagination1,.pagination2,.pagination3{
+    margin-top: 40px;
+    background-color: #fff;
+ margin: 30px 5px 30px 0;
+ display: flex;
+ align-items: center;
+ height: 45px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.pagination1{
+    width: 153px;
+}
+.pagination2{
+ width: 368px;
+}
+.pagination3{
+ width: 190px;
+}
+
+.pagination1 div:nth-child(1), .pagination2 div:nth-child(1),.pagination3 div:nth-child(1){
+    margin-left: 8px;
+}
+.pagination1 a , .pagination2 a ,.pagination3 a{
+    color: black;
+    padding: 6px 10px;
+    text-decoration: none;
+     
+    border: 1px solid rgb(143, 140, 140);
+    margin-right: 5px;
+    border-radius: 5px;
+    transition:  .3s;
+  }
+  
+  .pagination1 a.active,.pagination2 a.active,.pagination3 a.active  {
+    background-color: dodgerblue;
+    color: white;
+  }
+ 
+  .pagination1 a:hover:not(.active), .pagination2 a:hover:not(.active),.pagination3 a:hover:not(.active){
+    background-color: #ddd;
+
+}
+.master{
+    margin-top: 26px !important;
+    height: 33px !important;
+    font-weight: 200 !important;
+    font-size: 15px !important;
+}
+
