@@ -3,11 +3,12 @@ import search from "../images/icons8-search-50.png";
 import plus from "../images/icons8-plus-48.png";
 import "../user_gm/User_GM.css";
 import { useNavigate } from "react-router-dom";
-import edit from "../images/icons8-edit-24.png";
-import deleteIcon from "../images/icons8-delete-24.png";
-import lock from "../images/icons8-lock-24.png";
+import EditToolTip from "../toolTip/EditToolTip";
+import UpdateToolTip from "../toolTip/UpdateToolTip";
+import DeleteToolTip from "../toolTip/DeleteToolTip";
+import ToggleSwitch from "../ToggleSwitch";
 
-const User_GM = () => {
+const UserGM = () => {
   const navigate = useNavigate();
 
   const dashBoard = () => {
@@ -28,7 +29,10 @@ const User_GM = () => {
                 <img className="iconSearch" src={search} alt="searchIcon" />
               </button>
 
-              <button className="plusBtn">
+              <button
+                onClick={() => navigate("/updateUserGm")}
+                className="plusBtn"
+              >
                 <img className="plus" src={plus} alt="AddIcon" />
                 Create
               </button>
@@ -77,15 +81,20 @@ const User_GM = () => {
                     <td> test3@test.com</td>
                     <td> 9942573053</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editUserGm")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -95,15 +104,20 @@ const User_GM = () => {
                     <td> yesrawkey@gmail.com</td>
                     <td> 8667027917</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editUserGm")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -116,4 +130,4 @@ const User_GM = () => {
   );
 };
 
-export default User_GM;
+export default UserGM;

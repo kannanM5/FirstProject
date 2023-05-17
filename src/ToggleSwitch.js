@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Switch from "react-switch";
 
 export default function ToggleSwitch() {
-  const [active, inActive] = useState(false);
+  const [active, inActive] = useState(true);
 
   const handleChange = () => {
     inActive(!active);
@@ -13,8 +13,8 @@ export default function ToggleSwitch() {
         <Switch
           onChange={handleChange}
           checked={active}
-          checkedIcon={<div>Active</div>}
-          uncheckedIcon={<div>InActive</div>}
+          checkedIcon={<div>On</div>}
+          uncheckedIcon={<div>Off</div>}
         />
       </label>
     </div>

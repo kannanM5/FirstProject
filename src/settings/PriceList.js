@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../masters/masters.css";
-import deleteIcon from "../images/icons8-delete-24.png";
-import edit from "../images/icons8-edit-24.png";
+import EditToolTip from "../toolTip/EditToolTip";
+import DeleteToolTip from "../toolTip/DeleteToolTip";
 import "../settings/setting.css";
 
 export default function PriceListSetting() {
@@ -23,7 +23,12 @@ export default function PriceListSetting() {
               <span className="subTitle"> / Price List Master</span>
             </div>
             <div>
-              <button className="createBtnSet">Create</button>
+              <button
+                onClick={() => navigate("/updatePriceList")}
+                className="createBtnSet"
+              >
+                Create
+              </button>
             </div>
           </div>
 
@@ -80,8 +85,14 @@ export default function PriceListSetting() {
                     <td>300000005959281</td>
                     <td> DOMESTIC SALES UNIT-1</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPrice")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -90,8 +101,14 @@ export default function PriceListSetting() {
                     <td> 300000005959254</td>
                     <td> DEPO REPAIR-CBE</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPrice")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -100,8 +117,14 @@ export default function PriceListSetting() {
                     <td> 300000005959254</td>
                     <td> DEPO REPAIR-GNT</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPrice")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -110,8 +133,14 @@ export default function PriceListSetting() {
                     <td> 300000005959254</td>
                     <td> DEPO REPAIR-MDU</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPrice")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -120,8 +149,14 @@ export default function PriceListSetting() {
                     <td> 300000005959254</td>
                     <td> DEPO REPAIR-PNP</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPrice")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -130,8 +165,14 @@ export default function PriceListSetting() {
                     <td> 300000006334164</td>
                     <td> DOMESTIC SALES U1 UPTO280222</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPrice")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -140,8 +181,14 @@ export default function PriceListSetting() {
                     <td> 300000006334164</td>
                     <td> DOMESTIC SALES U3 UPTO280222</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPrice")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -150,8 +197,14 @@ export default function PriceListSetting() {
                     <td> 300000005959281</td>
                     <td> DOMESTIC SALES UNIT-3</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPrice")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -160,8 +213,14 @@ export default function PriceListSetting() {
                     <td> 300000005959281</td>
                     <td>DOMESTIC SALES UNIT-4</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPrice")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>

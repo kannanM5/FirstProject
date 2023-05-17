@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../masters/masters.css";
-import deleteIcon from "../images/icons8-delete-24.png";
-import edit from "../images/icons8-edit-24.png";
+import EditToolTip from "../toolTip/EditToolTip";
+import DeleteToolTip from "../toolTip/DeleteToolTip";
 import "../settings/setting.css";
 
 export default function FobSetting() {
@@ -24,7 +24,12 @@ export default function FobSetting() {
               <span className="subTitle"> / FOB Master</span>
             </div>
             <div>
-              <button className="createBtnSet">Create</button>
+              <button
+                onClick={() => navigate("/UpdateFobSetting")}
+                className="createBtnSet"
+              >
+                Create
+              </button>
             </div>
           </div>
 
@@ -76,8 +81,14 @@ export default function FobSetting() {
                     <td>C & F Price</td>
                     <td> C & F Priceasda</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editFob")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -85,8 +96,14 @@ export default function FobSetting() {
                     <td>C.F.R Price</td>
                     <td> C.F.R Price</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editFob")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -94,8 +111,14 @@ export default function FobSetting() {
                     <td>C & F Chennai (Madras) Price</td>
                     <td> C & F Chennai (Madras) Price</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editFob")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -104,8 +127,14 @@ export default function FobSetting() {
                     <td> C.F.R Chennai (Madras) Price</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editFob")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -114,8 +143,14 @@ export default function FobSetting() {
                     <td>C.I.F Chennai (Madras) Price F.O.B Price</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editFob")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>

@@ -1,11 +1,12 @@
 import React from "react";
 import search from "../images/icons8-search-50.png";
 import plus from "../images/icons8-plus-48.png";
-import deleteIcon from "../images/icons8-delete-24.png";
-import edit from "../images/icons8-edit-24.png";
-import lock from "../images/icons8-lock-24.png";
+import EditToolTip from "../toolTip/EditToolTip";
+import UpdateToolTip from "../toolTip/UpdateToolTip";
+import DeleteToolTip from "../toolTip/DeleteToolTip";
 import { useNavigate } from "react-router-dom";
 import "../user_SHQ/user_SHQ.css";
+import ToggleSwitch from "../ToggleSwitch";
 
 const UserSHQ = () => {
   const navigate = useNavigate();
@@ -16,8 +17,6 @@ const UserSHQ = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
-
       <div className="alignContent">
         <div className="selectAllContent">
           <div className="top_title">
@@ -30,7 +29,10 @@ const UserSHQ = () => {
                 <img className="iconSearch" src={search} alt="searchIcon" />
               </button>
 
-              <button className="plusBtn">
+              <button
+                onClick={() => navigate("/updateUserShq")}
+                className="plusBtn"
+              >
                 <img className="plus" src={plus} alt="AddIcon" />
                 Create
               </button>
@@ -79,15 +81,20 @@ const UserSHQ = () => {
                     <td> shqtest1@test.com</td>
                     <td> 9942573053</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editShq")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -97,15 +104,20 @@ const UserSHQ = () => {
                     <td>shqtest2@test.com</td>
                     <td> 8667027917</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left1"></div>
-                        <div className="right1">Inactive</div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editShq")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -115,15 +127,20 @@ const UserSHQ = () => {
                     <td> sa@gmail.com</td>
                     <td> 9942573053</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editShq")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>

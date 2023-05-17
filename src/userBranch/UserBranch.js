@@ -2,10 +2,11 @@ import React from "react";
 import "../userBranch/UserBranch.css";
 import search from "../images/icons8-search-50.png";
 import plus from "../images/icons8-plus-48.png";
-import deleteIcon from "../images/icons8-delete-24.png";
-import edit from "../images/icons8-edit-24.png";
-import lock from "../images/icons8-lock-24.png";
+import EditToolTip from "../toolTip/EditToolTip";
+import UpdateToolTip from "../toolTip/UpdateToolTip";
+import DeleteToolTip from "../toolTip/DeleteToolTip";
 import { useNavigate } from "react-router-dom";
+import ToggleSwitch from "../ToggleSwitch";
 
 const UserBranch = () => {
   const navigate = useNavigate();
@@ -27,7 +28,10 @@ const UserBranch = () => {
                 <img className="iconSearch" src={search} alt="searchIcon" />
               </button>
 
-              <button className="plusBtn">
+              <button
+                onClick={() => navigate("/updateBranch")}
+                className="plusBtn"
+              >
                 <img className="plus" src={plus} alt="AddIcon" />
                 Create
               </button>
@@ -36,7 +40,7 @@ const UserBranch = () => {
           <span onClick={dashboard} className="moveDashBoard">
             Dashboard
           </span>
-          <span className="subTitle"> / Manage Branches</span>
+          <span className="subTitle"> / Manage Branches </span>
 
           <div className="highLight">
             <div className="lastSection1">
@@ -76,15 +80,20 @@ const UserBranch = () => {
                     <td> suriyapanneerselvamv@gmail.com</td>
                     <td> 5675676565</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editBranch")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -94,15 +103,20 @@ const UserBranch = () => {
                     <td>surya1030930@gmail.com</td>
                     <td> 9942573043</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -112,15 +126,20 @@ const UserBranch = () => {
                     <td> t@lakshmicardclothing.com</td>
                     <td> 914222240205</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -130,15 +149,20 @@ const UserBranch = () => {
                     <td> lccsocbe@lakshmicardclothing.com</td>
                     <td> 91-422-2240205 (4 lines)</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -148,15 +172,20 @@ const UserBranch = () => {
                     <td> lccsomdu@lakshmicardclothing.com</td>
                     <td> 91-452-2566756, 91-9843017077, 91-9842256675</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -166,15 +195,20 @@ const UserBranch = () => {
                     <td>lccsoguntur@lakshmicardclothing.com</td>
                     <td> 91-9553018666</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -184,15 +218,20 @@ const UserBranch = () => {
                     <td> lccsonagpur@lakshmicardclothing.com</td>
                     <td> 6665554443</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -202,15 +241,20 @@ const UserBranch = () => {
                     <td>umeshpatil@lakshmicardclothing.com</td>
                     <td> 4445553332</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -220,15 +264,20 @@ const UserBranch = () => {
                     <td>abcd@gmail.com</td>
                     <td> 9998887776</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -238,15 +287,20 @@ const UserBranch = () => {
                     <td> abcd1@gmail.com</td>
                     <td> 45654646</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -256,15 +310,20 @@ const UserBranch = () => {
                     <td> abcd1@gmail.com</td>
                     <td> 45654646</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -274,15 +333,20 @@ const UserBranch = () => {
                     <td> testmaestro@gmail.com</td>
                     <td> 9897899876</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -292,15 +356,20 @@ const UserBranch = () => {
                     <td>test22@gmail.com</td>
                     <td> 554434433</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -310,15 +379,20 @@ const UserBranch = () => {
                     <td> test3@gmail.com</td>
                     <td> </td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -328,15 +402,20 @@ const UserBranch = () => {
                     <td> suriyapanneerselvamv@gmail.com</td>
                     <td> 4565465454</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -346,15 +425,20 @@ const UserBranch = () => {
                     <td> surya1030930@gmail.com</td>
                     <td></td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -364,15 +448,20 @@ const UserBranch = () => {
                     <td> suriyapanneerselvamv@gmail.com</td>
                     <td> 6666555545</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>

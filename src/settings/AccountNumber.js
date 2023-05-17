@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../masters/masters.css";
-import deleteIcon from "../images/icons8-delete-24.png";
-import edit from "../images/icons8-edit-24.png";
+import EditToolTip from "../toolTip/EditToolTip";
+import DeleteToolTip from "../toolTip/DeleteToolTip";
 import "../settings/setting.css";
 
 export default function AccountNumberSetting() {
@@ -24,22 +24,27 @@ export default function AccountNumberSetting() {
               <span className="subTitle"> / Account Master</span>
             </div>
             <div>
-              <button className="createBtnSet">Create</button>
+              <button
+                onClick={() => navigate("/settingAccount")}
+                className="createBtnSet"
+              >
+                Create
+              </button>
             </div>
           </div>
 
           <div className="highLight">
-            <div className="setting_search_boxes">
-              <div className="inputFieldAcc">
+            <div className="row">
+              <div className="col-3 inputFieldAcc">
                 <label className="labelSet">Customer Number</label>
                 <br />
                 <input className="input" type="text" />
               </div>
-              <div className="inputFieldAcc">
+              <div className="col-3 inputFieldAcc">
                 <label className="labelSet">Account Number</label> <br />
                 <input className="input" type="text" />
               </div>
-              <div className="inputFieldAcc">
+              <div className="col-3 inputFieldAcc">
                 <label className="labelSet">Gst No</label> <br />
                 <input className="input" type="text" />
               </div>
@@ -81,8 +86,14 @@ export default function AccountNumberSetting() {
                     <td> 2559</td>
                     <td> -</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -91,8 +102,14 @@ export default function AccountNumberSetting() {
                     <td> 80006</td>
                     <td> -</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -101,8 +118,14 @@ export default function AccountNumberSetting() {
                     <td> 108562</td>
                     <td> -</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -111,8 +134,14 @@ export default function AccountNumberSetting() {
                     <td> 80003</td>
                     <td> -</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -121,8 +150,14 @@ export default function AccountNumberSetting() {
                     <td> 80002</td>
                     <td> -</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -131,8 +166,14 @@ export default function AccountNumberSetting() {
                     <td> 80001</td>
                     <td> -</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -141,8 +182,14 @@ export default function AccountNumberSetting() {
                     <td> 80005</td>
                     <td> -</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -151,8 +198,14 @@ export default function AccountNumberSetting() {
                     <td> 80004</td>
                     <td> -</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -161,8 +214,14 @@ export default function AccountNumberSetting() {
                     <td> 4004</td>
                     <td>33AQHPD9333Q2ZF</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -171,8 +230,14 @@ export default function AccountNumberSetting() {
                     <td> 27001</td>
                     <td>24ADNPK4445K1ZA</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -181,8 +246,14 @@ export default function AccountNumberSetting() {
                     <td> 48001</td>
                     <td>-</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -191,8 +262,14 @@ export default function AccountNumberSetting() {
                     <td> 40002</td>
                     <td>33ADZFS3721L1ZH</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -201,8 +278,14 @@ export default function AccountNumberSetting() {
                     <td>2898</td>
                     <td>33AAHCD1065A1ZC</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -211,8 +294,14 @@ export default function AccountNumberSetting() {
                     <td>46001</td>
                     <td>29AREPR6462J1Z6</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -221,8 +310,14 @@ export default function AccountNumberSetting() {
                     <td> 4003</td>
                     <td>33AALCR4320A1ZY</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -231,8 +326,14 @@ export default function AccountNumberSetting() {
                     <td> 19001</td>
                     <td> 33ABCFR9071M1ZS</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -241,8 +342,14 @@ export default function AccountNumberSetting() {
                     <td> 22001</td>
                     <td> 33ACXFS2244M1ZJ</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -251,8 +358,14 @@ export default function AccountNumberSetting() {
                     <td> 43001</td>
                     <td> 33ACKFS1187L1ZQ</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -261,8 +374,14 @@ export default function AccountNumberSetting() {
                     <td> 43001</td>
                     <td> 33AYPPH3572D1Z1</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -271,52 +390,82 @@ export default function AccountNumberSetting() {
                     <td> 41001</td>
                     <td> 33AADFD4206A1ZD</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editAccountNumber")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <div class="pagination">
-                <div>
-                  <a href="#">&laquo;</a>
-                </div>
-                <div>
-                  <a class="active" href="#">
-                    1
-                  </a>
-                </div>
-                <div>
-                  <a href="#">2</a>
-                </div>
-                <div>
-                  <a href="#">3</a>
-                </div>
-                <div>
-                  <a href="#">4</a>
-                </div>
-                <div>
-                  <a href="#">5</a>
-                </div>
-                <div>
-                  <a href="#">6</a>
-                </div>
-                <div>
-                  <a href="#">7</a>
-                </div>
-                <div>
-                  <a href="#">8</a>
-                </div>
-                <div>
-                  <a href="#">9</a>
-                </div>
-                <div>
-                  <a href="#">10</a>
-                </div>
-                <div>
-                  <a href="#">&raquo;</a>
-                </div>
-              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      1
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      2
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      3
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      4
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      5
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      6
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      7
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      8
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      9
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      10
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

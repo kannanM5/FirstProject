@@ -98,3 +98,15 @@ th{
     font-weight: 500;
     text-align: left;
 }
+.tooltipStyle{
+    display: flex;
+}
+
+.title h4{
+    text-align: center;
+    padding: 20px;
+    font-weight: 400 !important;
+}
+.time{
+    height: 85px !important;
+}

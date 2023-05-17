@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../masters/masters.css";
-import deleteIcon from "../images/icons8-delete-24.png";
-import edit from "../images/icons8-edit-24.png";
+import EditToolTip from "../toolTip/EditToolTip";
+import DeleteToolTip from "../toolTip/DeleteToolTip";
 import "../settings/setting.css";
 
 export default function PaymentSetting() {
@@ -21,26 +21,27 @@ export default function PaymentSetting() {
               <span onClick={dashBoard} className="moveDashBoard">
                 Dashboard
               </span>
-              <span className="subTitle"> / Account Master</span>
+              <span className="subTitle"> / Payment Master</span>
             </div>
             <div>
-              <button className="createBtnSet">Create</button>
+              <button
+                onClick={() => navigate("/updatePayment")}
+                className="createBtnSet"
+              >
+                Create
+              </button>
             </div>
           </div>
 
           <div className="highLight">
-            <div className="setting_search_boxes">
-              <div className="inputFieldAcc">
+            <div className="row">
+              <div className="col-4 inputFieldAcc">
                 <label className="labelSet">Payment Type</label>
                 <br />
                 <input className="input" type="text" />
               </div>
-              <div className="inputFieldAcc">
+              <div className="col-4 inputFieldAcc">
                 <label className="labelSet">Description</label> <br />
-                <input className="input" type="text" />
-              </div>
-              <div className="inputFieldAcc">
-                <label className="labelSet">Gst No</label> <br />
                 <input className="input" type="text" />
               </div>
             </div>
@@ -80,8 +81,14 @@ export default function PaymentSetting() {
                     <td> 20 DAYS CREDIT</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -90,8 +97,14 @@ export default function PaymentSetting() {
                     <td>DOCUMENTS THROUGH BANK</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -100,8 +113,14 @@ export default function PaymentSetting() {
                     <td> 60 DAYS PDC</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -110,8 +129,14 @@ export default function PaymentSetting() {
                     <td>60 DAYS CREDIT</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -120,36 +145,50 @@ export default function PaymentSetting() {
                     <td> DA 150 DAYS FROM B/L DATE</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>6</td>
                     <td> LC AT 180 DAYS</td>
                     <td>
-                      {" "}
                       CONFIRMED & IRREVOCABLE LC AT 180 DAYS FROM THE DATE OF
                       B/L.
                     </td>
-
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>7</td>
                     <td>LC AT 120 DAYS</td>
                     <td>
-                      {" "}
                       CONFIRMED & IRREVOCABLE LC AT 120 DAYS FROM THE DATE OF
                       DESPATCH
                     </td>
-
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -158,8 +197,14 @@ export default function PaymentSetting() {
                     <td> 30% ADVANCE AND BALANCE AGAINST PROFORMA INVOICE</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -168,8 +213,14 @@ export default function PaymentSetting() {
                     <td> 20% ADVANCE AND BALANCE AGAINST PROFORMA INVOICE</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -178,8 +229,14 @@ export default function PaymentSetting() {
                     <td> DOCUMENTS AGAINST PAYMENT</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -188,8 +245,14 @@ export default function PaymentSetting() {
                     <td> MACHINE SENT FOR INSPECTION AND RETURN</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -198,8 +261,14 @@ export default function PaymentSetting() {
                     <td> DOCUMENTS AGAINST ACCEPTANCE 90 DAYS</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -208,8 +277,14 @@ export default function PaymentSetting() {
                     <td>DA 30 DAYS FROM B/L DATE</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -221,8 +296,14 @@ export default function PaymentSetting() {
                     </td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -231,8 +312,14 @@ export default function PaymentSetting() {
                     <td> 5 30 DAYS PDC</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -241,8 +328,14 @@ export default function PaymentSetting() {
                     <td> 45 DAYS PDC</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -251,8 +344,14 @@ export default function PaymentSetting() {
                     <td> 90 DAYS CREDIT</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -261,8 +360,14 @@ export default function PaymentSetting() {
                     <td> 10% ADVANCE & BALANCE 90% LC AT SIGHT</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -271,8 +376,14 @@ export default function PaymentSetting() {
                     <td> DOCUMENTS AGAINST ACCEPTANCE</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -281,32 +392,42 @@ export default function PaymentSetting() {
                     <td> FREE OF CHARGE</td>
 
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editPayment")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <div class="pagination3">
-                <div>
-                  <a href="#">&laquo;</a>
-                </div>
-                <div>
-                  <a class="active" href="#">
-                    1
-                  </a>
-                </div>
-                <div>
-                  <a href="#">2</a>
-                </div>
-                <div>
-                  <a href="#">3</a>
-                </div>
-
-                <div>
-                  <a href="#">&raquo;</a>
-                </div>
-              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      1
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      2
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      3
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

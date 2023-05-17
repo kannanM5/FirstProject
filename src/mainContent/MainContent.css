@@ -150,39 +150,7 @@ td{
 .selectNumber{
     margin-left: 5px;
 }
-.pagination{
-    margin-top: 40px;
-       background-color: #fff;
-    margin: 0 5px 10px 0;
-    display: flex;
-    align-items: center;
-    width: 36%;
-    height: 45px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.pagination div:nth-child(1){
-    margin-left: 8px;
-}
-.pagination a {
-    color: black;
-    padding: 6px 10px;
-    text-decoration: none;
-     
-    border: 1px solid rgb(143, 140, 140);
-    margin-right: 5px;
-    border-radius: 5px;
-    transition:  .3s;
-  }
-  
-  .pagination a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
- 
-  .pagination a:hover:not(.active) {
-    background-color: #ddd;
 
-}
 .bottom{
     margin-bottom: 20px !important;
 }

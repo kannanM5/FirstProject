@@ -5,7 +5,11 @@ import "react-datepicker/dist/react-datepicker.css";
 export default function DatePickerDate() {
   const [startDate, setStartDate] = useState(new Date());
   return (
-    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+    <DatePicker
+      s
+      selected={startDate}
+      onChange={(date) => setStartDate(date)}
+    />
   );
 }
 

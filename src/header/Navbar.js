@@ -1,6 +1,6 @@
 import React from "react";
 import "../header/Navbar.css";
-import classes from "../header/Navbar.css";
+// import classes from "../header/Navbar.css";
 import logo from "../images/logo.svg";
 import speedometer from "../images/5925631_meter_speed_speedometer_icon.png";
 import user from "../images/person-fill.svg";
@@ -57,11 +57,11 @@ const Navbar = () => {
         </div>
         <div className="navList">
           <img className="paper" src={paper} alt="paper_logo" />
-          <span>Sales Order</span>
+          <span onClick={() => navigate("/others")}>Sales Order</span>
         </div>
         <div className="navList">
           <img className="location" src={location} alt="location_logo" />
-          <span>Track Users</span>
+          <span onClick={() => navigate("/track")}>Track Users</span>
         </div>
         <div className="navList">
           <img className="user" src={user} alt="user_logo" />

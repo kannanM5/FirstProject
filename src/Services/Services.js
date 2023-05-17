@@ -1,5 +1,8 @@
-import axios from "./Axios";
+import axios from "axios";
+import { baseUrl } from "../Utilities/Constants"
 
-export const loginService = (data) => {
-  return axios.post("dashboard/login_report", data);
-};
+const instance = axios.create({
+  baseURL: baseUrl,
+});
+
+export default instance;

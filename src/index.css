@@ -28,51 +28,22 @@ code {
   
 }
 
-/* .react-switch-handle{
+.react-switch-handle{
+   border-radius: 3px !important;
+   padding: 2px !important;
+   height: 19px !important;
 
-    width: 46px !important;
-    background: rgb(255, 255, 255);
-    display: inline-block;
-    position: absolute;
-    transform: translateX(49px) !important;
-    background: rgb(182, 179, 179) !important;
-    top: 0px !important;
-    margin: 2px !important;
 }
 
 .react-switch-bg{
-  
-    padding: 0px 1px 0 6px !important;
-    margin: 2px !important;
-    width: 46px !important;
-    font-size: 11px !important;
-    transform: translateX(-1px) !important;
-    position: relative;
-    background: rgb(0, 136, 0);
-}
-.react-switch-bg,.react-switch-handle{
-  cursor: pointer;
+  border-radius: 3px !important;
+  padding: 2px !important;
   color: white !important;
-  border-radius: 1px !important;
-  height: 15px !important;
-}
- */
- .react-switch-handle{
-      width: 18px !important;
-      height: 15px !important;
-      border-radius: 2px !important;
-      font-size: 11px !important;
-      color: white !important;
-      top: 0 !important;
-      /* transform: translateX(40px) !important; */
- }
- .react-switch-bg{
-  width: 40 !important;
-  height: 15px !important;
-  border-radius: 2px !important;
+  height: 21px !important;
   font-size: 11px !important;
-  color: white !important;
-  transform: translateX(-19px) !important;
-  top: 1 !important;
+
 }
+
+
+
  

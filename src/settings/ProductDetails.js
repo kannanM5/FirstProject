@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../masters/masters.css";
-import deleteIcon from "../images/icons8-delete-24.png";
-import edit from "../images/icons8-edit-24.png";
+import EditToolTip from "../toolTip/EditToolTip";
+import DeleteToolTip from "../toolTip/DeleteToolTip";
+import star from "../images/icons8-star-30.png";
 import "../settings/setting.css";
 
 export default function ProductDetailsSetting() {
@@ -23,7 +24,12 @@ export default function ProductDetailsSetting() {
               <span className="subTitle"> / Product Master</span>
             </div>
             <div>
-              <button className="createBtnSet">Create</button>
+              <button
+                onClick={() => navigate("/updateProductDetail")}
+                className="createBtnSet"
+              >
+                Create
+              </button>
             </div>
           </div>
 
@@ -31,15 +37,26 @@ export default function ProductDetailsSetting() {
             <div className="setting_search_boxes">
               <div className="inputFieldPrice">
                 <label className="labelSet">Item Number</label>
+                <sup>
+                  <img className="star" src={star} alt="star" />
+                </sup>
                 <br />
                 <input className="input" type="text" />
               </div>
               <div className="inputFieldPrice">
-                <label className="labelSet">Description</label> <br />
+                <label className="labelSet">Description</label>
+                <sup>
+                  <img className="star" src={star} alt="star" />
+                </sup>
+                <br />
                 <input className="input" type="text" />
               </div>
               <div className="inputFieldPrice">
-                <label className="labelSet">Uom Code</label> <br />
+                <label className="labelSet">Uom Code</label>
+                <sup>
+                  <img className="star" src={star} alt="star" />
+                </sup>
+                <br />
                 <input className="input" type="text" />
               </div>
             </div>
@@ -50,6 +67,10 @@ export default function ProductDetailsSetting() {
                 <input className="input" type="text" />
               </div>
               <div className="inputFieldPrice">
+                <label className="labelSet">Price List Name</label>
+                <sup>
+                  <img className="star" src={star} alt="star" />
+                </sup>
                 <select
                   class="form-select master"
                   aria-label="Default select example"
@@ -61,7 +82,11 @@ export default function ProductDetailsSetting() {
                 </select>
               </div>
               <div className="inputFieldPrice">
-                <label className="labelSet">Base Price</label> <br />
+                <label className="labelSet">Base Price</label>
+                <sup>
+                  <img className="star" src={star} alt="star" />
+                </sup>{" "}
+                <br />
                 <input className="input" type="text" />
               </div>
             </div>
@@ -109,8 +134,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>100</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -122,8 +153,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>999988</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -135,8 +172,14 @@ export default function ProductDetailsSetting() {
                     <td>84483100 </td>
                     <td>26700</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -148,8 +191,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>200000</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -165,8 +214,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>1305</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -178,8 +233,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>550000</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -191,8 +252,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>450000</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -204,8 +271,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>25000</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -217,8 +290,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>40</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -230,8 +309,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>105</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -243,8 +328,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>225</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -256,8 +347,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>19870</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -269,15 +366,20 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>3905</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>14</td>
                     <td>S905190208</td>
                     <td>
-                      {" "}
                       "BCH" MAKE 4 PIN PLUG WITH INCLINED ANGLE TYPE 213 B
                     </td>
                     <td>NO</td>
@@ -285,8 +387,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td> 1315</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -298,15 +406,20 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>1315</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>16</td>
                     <td>S905150006</td>
                     <td>
-                      {" "}
                       POTENTIO METER-10K-1 WATT/10 TURNS-MAKE:BOURNS ( 2 HP,
                       DRIVE )
                     </td>
@@ -315,8 +428,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>1190</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -332,8 +451,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>625</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -349,8 +474,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>625</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -365,8 +496,14 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>1635</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -378,52 +515,82 @@ export default function ProductDetailsSetting() {
                     <td>Domestic Price List</td>
                     <td>3440</td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editDetail")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <div class="pagination">
-                <div>
-                  <a href="#">&laquo;</a>
-                </div>
-                <div>
-                  <a class="active" href="#">
-                    1
-                  </a>
-                </div>
-                <div>
-                  <a href="#">2</a>
-                </div>
-                <div>
-                  <a href="#">3</a>
-                </div>
-                <div>
-                  <a href="#">4</a>
-                </div>
-                <div>
-                  <a href="#">5</a>
-                </div>
-                <div>
-                  <a href="#">6</a>
-                </div>
-                <div>
-                  <a href="#">7</a>
-                </div>
-                <div>
-                  <a href="#">8</a>
-                </div>
-                <div>
-                  <a href="#">9</a>
-                </div>
-                <div>
-                  <a href="#">10</a>
-                </div>
-                <div>
-                  <a href="#">&raquo;</a>
-                </div>
-              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      1
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      2
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      3
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      4
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      5
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      6
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      7
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      8
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      9
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      10
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

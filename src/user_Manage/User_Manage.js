@@ -2,14 +2,15 @@ import React from "react";
 import "../user_Manage/User_Manage.css";
 import search from "../images/icons8-search-50.png";
 import plus from "../images/icons8-plus-48.png";
-import deleteIcon from "../images/icons8-delete-24.png";
-import edit from "../images/icons8-edit-24.png";
-import lock from "../images/icons8-lock-24.png";
+import EditToolTip from "../toolTip/EditToolTip";
+import UpdateToolTip from "../toolTip/UpdateToolTip";
+import DeleteToolTip from "../toolTip/DeleteToolTip";
+import LocationToolTip from "../toolTip/LocationToolTip";
+import TodoToolTip from "../toolTip/TodoToolTip";
 import { useNavigate } from "react-router-dom";
-import location from "../images/icons8-location-50.png";
-import menu from "../images/icons8-menu-50.png";
+import ToggleSwitch from "../ToggleSwitch";
 
-const User_Manage = () => {
+const UserManage = () => {
   const navigate = useNavigate();
 
   const dashboard = () => {
@@ -29,7 +30,10 @@ const User_Manage = () => {
                 <img className="iconSearch" src={search} alt="searchIcon" />
               </button>
 
-              <button className="plusBtn">
+              <button
+                onClick={() => navigate("/updateSales")}
+                className="plusBtn"
+              >
                 <img className="plus" src={plus} alt="AddIcon" />
                 Create
               </button>
@@ -80,17 +84,26 @@ const User_Manage = () => {
                     <td> 8968646466</td>
                     <td> Branch 3</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div onClick={() => navigate("/editManage")}>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -101,17 +114,26 @@ const User_Manage = () => {
                     <td> 5456786578</td>
                     <td> Branch 1</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -122,17 +144,26 @@ const User_Manage = () => {
                     <td> 91422224025</td>
                     <td>Coimbatore</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -143,17 +174,26 @@ const User_Manage = () => {
                     <td>65765765</td>
                     <td>Madurai</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -164,17 +204,26 @@ const User_Manage = () => {
                     <td> 9791491111</td>
                     <td> Branch 1</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -185,17 +234,26 @@ const User_Manage = () => {
                     <td> 5675675673</td>
                     <td>Branch 1</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -206,17 +264,26 @@ const User_Manage = () => {
                     <td>657567565</td>
                     <td>Branch 3</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -227,17 +294,26 @@ const User_Manage = () => {
                     <td> 5654654644</td>
                     <td>bnhgfh</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -248,17 +324,26 @@ const User_Manage = () => {
                     <td> 7778886668</td>
                     <td> branch6</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -269,17 +354,26 @@ const User_Manage = () => {
                     <td> 56756756564</td>
                     <td>Branch 3</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -290,17 +384,26 @@ const User_Manage = () => {
                     <td> 65765765</td>
                     <td> Madurai</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -311,17 +414,26 @@ const User_Manage = () => {
                     <td> 9865748574</td>
                     <td>Coimbatore</td>
                     <td>
-                      <div className="toggleSwitch">
-                        <div className="left">Active</div>
-                        <div className="right"></div>
-                      </div>
+                      <ToggleSwitch />
                     </td>
                     <td>
-                      <img className="crud" src={edit} alt="edit" />
-                      <img className="crud" src={deleteIcon} alt="deleteIcon" />
-                      <img className="crud" src={lock} alt="lock" />
-                      <img className="crud" src={location} alt="location" />
-                      <img className="crud" src={menu} alt="menu" />
+                      <div className="tooltipStyle">
+                        <div>
+                          <EditToolTip />
+                        </div>
+                        <div>
+                          <DeleteToolTip />
+                        </div>
+                        <div>
+                          <UpdateToolTip />
+                        </div>
+                        <div>
+                          <LocationToolTip />
+                        </div>
+                        <div>
+                          <TodoToolTip />
+                        </div>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -334,4 +446,4 @@ const User_Manage = () => {
   );
 };
 
-export default User_Manage;
+export default UserManage;

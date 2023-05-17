@@ -4,7 +4,6 @@
 }
 .setting_search_boxes{
     display: flex;
-
 }
 .createBtnSet{
     background-color: #46c35f;
@@ -32,8 +31,8 @@
     padding: 5px 15px;
 }
 .inputFieldAcc{
-    margin: 0 18px 15px 0;
-    width: 24%;
+    margin-bottom:  15px !important;
+  
 }
 .inputFieldFob{
     margin: 0 18px 15px 0;
@@ -94,9 +93,97 @@ button:hover{
 
 }
 .master{
-    margin-top: 26px !important;
+    /* margin-top: 6px !important; */
     height: 33px !important;
     font-weight: 200 !important;
     font-size: 15px !important;
 }
+.save{
+    margin: 0 10px 30px 0;
+}
+.labelSet3{
+   font-size: 12px;
+   font-weight: 400 ;
+   margin-left: 6px;
+}
+.radio{
+    width: 10px;
+}
+.create{
+    margin-top: -30px !important;
+}
+.total{
+   text-align: right !important;
+   width: 100%;
+}
+.total input{
+    width: 10%;
+    margin-right: 20px;
+}
+.total label{
+    margin-right: 5px;
+    font-size: 20px;
+    color: grey;
+}
+.form-select{
+    height: 33px;
+    font-size: 16px !important;
+    font-family: 200 !important;
+}
+.box{
+    border: 1px solid rgb(233, 227, 227);
+    width: 400px;
+    height: 120px;
+    margin: 6px;
+    border-radius: 3px;
+}
+.lastSection1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.boxes{
+    margin-bottom: 10px;
+}
+.boxes span{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.search{
+    width: 405px;
+}
+.separate{
+    margin-bottom: 5px;
+}
+.labelSet5{
+    font-weight: 300 !important;
+    font-size: 14px;
+}
+.btnSubmit{
+    text-align: center;
+    padding: 30px;
+}
+.typeInput{
+    height: 36px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    color: grey;
+    font-size: 14px;
 
+    width: 100%;
+    padding: 10px;
+}
+.selectInputs{
+    display: flex;
+}
+.gap{
+    margin: 0 15px 20px 0;
+    width: 20%;
+}
+
+hr{
+    padding: 10px;
+}
+.backColor{
+    background-color: rgb(236, 234, 234);
+}

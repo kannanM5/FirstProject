@@ -22,12 +22,18 @@ export default function Others() {
               <h3>Sales Orders</h3>
             </div>
             <div>
-              <button className="plusBtn1">
+              <button
+                onClick={() => navigate("/createOffer")}
+                className="plusBtn1"
+              >
                 <img className="plus" src={plus} alt="AddIcon" />
                 Create offer
               </button>
 
-              <button className="plusBtn1">
+              <button
+                onClick={() => navigate("/createOrder")}
+                className="plusBtn1"
+              >
                 <img className="plus" src={plus} alt="AddIcon" />
                 Create Order
               </button>
