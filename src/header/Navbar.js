@@ -180,7 +180,7 @@ const Navbar = () => {
               <img src={user} alt="user_icon" />
               Profile update
             </Dropdown.Item>
-            <Dropdown.Item href="/logout">
+            <Dropdown.Item href="/logIn">
               <img className="logout" src={logout} alt="logout_icon" />
               Logout
             </Dropdown.Item>

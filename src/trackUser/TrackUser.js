@@ -48,7 +48,6 @@ export default function TrackUser() {
   ];
   const navigate = useNavigate();
 
-
   return (
     <>
       <div className="alignContent">

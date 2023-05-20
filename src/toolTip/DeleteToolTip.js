@@ -5,6 +5,7 @@ import deleteIcon from "../images/icons8-delete-24.png";
 
 export default function DeleteToolTip() {
   let deleteUser = () => {
+    // confirm("Are you sure you want to delete this user?")
     alert("Are you sure you want to delete this user?");
   };
   return (

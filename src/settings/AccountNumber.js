@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../masters/masters.css";
 import EditToolTip from "../toolTip/EditToolTip";
 import DeleteToolTip from "../toolTip/DeleteToolTip";
 import "../settings/setting.css";
+import { masterAccount } from "../Services/Axios";
+import { useFormik } from "formik";
 
 export default function AccountNumberSetting() {
   const navigate = useNavigate();
+  const sha1 = require("sha1");
+
+  const { handleChange, handleSubmit, errors, values, touched } = useFormik({
+    initialValues: {
+      token: "",
+      customerNumber: "",
+      accountNumber: "",
+      gstNo: "",
+    },
+
+    onSubmit: (values) => {
+      handleLogin(values);
+    },
+  });
+
+  console.log(values, "error");
+  const handleLogin = (data) => {
+    let formData = new FormData();
+    formData.append("token", sha1("L4jklcv@1qaz!mn71iwe"));
+    formData.append("customer_number", data.customerNumber);
+    formData.append("account_number", data.accountNumber);
+    formData.append("gst_no", data.gstNo);
+    masterAccount(formData)
+      .then((res) => {
+        console.log(res.data, "response");
+      })
+      .catch((err) => console.log(err, "error"));
+  };
 
   const dashBoard = () => {
     navigate("/");
@@ -38,18 +68,38 @@ export default function AccountNumberSetting() {
               <div className="col-3 inputFieldAcc">
                 <label className="labelSet">Customer Number</label>
                 <br />
-                <input className="input" type="text" />
+                <input
+                  className="input"
+                  type="text"
+                  onChange={handleChange}
+                  name="customerNumber"
+                  value={values.customerNumber}
+                />
               </div>
               <div className="col-3 inputFieldAcc">
                 <label className="labelSet">Account Number</label> <br />
-                <input className="input" type="text" />
+                <input
+                  className="input"
+                  type="text"
+                  onChange={handleChange}
+                  name="accountNumber"
+                  value={values.accountNumber}
+                />
               </div>
               <div className="col-3 inputFieldAcc">
                 <label className="labelSet">Gst No</label> <br />
-                <input className="input" type="text" />
+                <input
+                  className="input"
+                  type="text"
+                  onChange={handleChange}
+                  name="gstNo"
+                  value={values.gstNo}
+                />
               </div>
             </div>
-            <button className="searchBtnSet">Search</button>
+            <button onClick={handleSubmit} className="searchBtnSet">
+              Search
+            </button>
             <button className="resetBtnSet">Reset</button>
 
             <div className="lastSection1">

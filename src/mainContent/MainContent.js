@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "../mainContent/MainContent.css";
 import pdf from "../images/icons8-pdf-50.png";
 import excel from "../images/icons8-microsoft-excel-48.png";
@@ -20,16 +20,14 @@ const MainContent = () => {
   //   }).catch((err)=>{
   //     console.log(err);
   //   })
- 
-  // }, [])
-  
 
+  // }, [])
 
   return (
     <>
-      <div className="content pt-3">
-        <article className="selectAll">
-          <div className="title">
+      <div className="alignContent">
+        <article className="selectAllContent">
+          <div className="top-title">
             <h3>Dashboard</h3>
           </div>
 
@@ -100,7 +98,7 @@ const MainContent = () => {
                     From date
                   </label>
                 </div>
-                <DatePickerDate  />
+                <DatePickerDate />
               </div>
 
               <div className="col-6">
@@ -124,7 +122,7 @@ const MainContent = () => {
               </div>
               <div className="col-5 alignBtn">
                 <div>
-                  <button  className="alignSearch">Search</button>
+                  <button className="alignSearch">Search</button>
                 </div>
                 <div>
                   <button className="alignreset">Reset</button>
@@ -247,25 +245,25 @@ const MainContent = () => {
                 </tbody>
               </table>
               <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-end">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1">
+                <ul className="pagination justify-content-end">
+                  <li className="page-item disabled">
+                    <a className="page-link" href="#" tabindex="-1">
                       <span aria-hidden="true">&laquo;</span>
                     </a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">
+                  <li className="page-item">
+                    <a className="page-link" href="#">
                       1
                     </a>
                   </li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">
+                  <li className="page-item">
+                    <a className="page-link" href="#">
                       2
                     </a>
                   </li>
 
-                  <li class="page-item">
-                    <a class="page-link" href="#">
+                  <li className="page-item">
+                    <a className="page-link" href="#">
                       <span aria-hidden="true">&raquo;</span>
                     </a>
                   </li>

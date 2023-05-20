@@ -31,7 +31,7 @@ import LineReport from "./reports/LineReport";
 import Others from "./reports/Others";
 import UpdateProfile from "./SuperAdmin/UpdateProfile";
 import ChangePassword from "./SuperAdmin/ChangePassword";
-import LogOut from "./SuperAdmin/LogIn";
+import LogIn from "./SuperAdmin/LogIn";
 import AccountSetting from "./settingUpdate/UpdateAccountSetting";
 import UpdateFobSetting from "./settingUpdate/UpdateFobSetting";
 import UpdateFreightSetting from "./settingUpdate/UpdateFreightSetting";
@@ -151,7 +151,7 @@ const router = createBrowserRouter([
     ],
   },
 
-  { path: "logout", element: <LogOut /> },
+  { path: "login", element: <LogIn /> },
 ]);
 
 function App() {
